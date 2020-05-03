@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathSeer.DataAccess", "Math
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "MathSeer.MathFunctions", "MathSeer.MathFunctions\MathSeer.MathFunctions.fsproj", "{2BD28697-B1CE-492A-A455-EC579B7883E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSeer.Learning", "MathSeer.Learning\MathSeer.Learning.csproj", "{2DFC4EFC-2A5D-4352-8431-D3E7BDD0680A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{2BD28697-B1CE-492A-A455-EC579B7883E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BD28697-B1CE-492A-A455-EC579B7883E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BD28697-B1CE-492A-A455-EC579B7883E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DFC4EFC-2A5D-4352-8431-D3E7BDD0680A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DFC4EFC-2A5D-4352-8431-D3E7BDD0680A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DFC4EFC-2A5D-4352-8431-D3E7BDD0680A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DFC4EFC-2A5D-4352-8431-D3E7BDD0680A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
