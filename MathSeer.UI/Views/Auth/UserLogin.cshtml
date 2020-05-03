@@ -1,10 +1,10 @@
 ﻿@model MathSeer.UI.Models.UserLogin
 @{
-    ViewData["Title"] = "UserLogin";
+    ViewData["Title"] = "User Login";
 }
 
 <h1>UserLogin</h1>
-@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+@using (Html.BeginForm("CheckLogin", "Auth", FormMethod.Post))
 {
     <div class="form-group">
         @Html.LabelFor(m => m.Username)
@@ -14,18 +14,16 @@
         @Html.LabelFor(m => m.Password)
         @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
     </div>
-    <div>
+    <div class="form-group">
         @Html.AntiForgeryToken()
     </div>
-    <div>
-        <div class="form-group btn">
-            <input class="btn-primary" type="submit" name="Submit"/>
-        </div>
+    <div class="form-group">
+        <input class="btn-primary btn-lg" type="submit" name="Submit"/>
     </div>
 }
 
 <div>
     Not Registered? Click <a href="/auth/register">Here!</a>
-</div>
+</div>  
 
 
