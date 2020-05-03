@@ -7,19 +7,34 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MathSeer.UI.Controllers
 {
-    [Route("auth/")]
+    [Route("/auth")]
     public class AuthController : Controller
     {
-        [HttpGet("login")]
-        public IActionResult LoginPage()
+        public IActionResult Index()
+        {
+            return Redirect("auth/login");
+        }
+
+        [HttpPost, Route("login")]
+        public IActionResult UserLogin()
         {
             return View(new UserLogin());
         }
 
-        [HttpGet("register")]
-        public IActionResult RegisterPage()
+        public IActionResult CheckLogin()
+        {
+            return Redirect("/");
+        }
+
+        [HttpPost, Route("register")]
+        public IActionResult UserRegister()
         {
             return View(new UserRegister());
+        }
+
+        public IActionResult NewUser()
+        {
+            return Redirect("/");
         }
     }
 }
