@@ -10,31 +10,27 @@ namespace MathSeer.UI.Controllers
     [Route("/auth")]
     public class AuthController : Controller
     {
-        public IActionResult Index()
-        {
-            return Redirect("auth/login");
-        }
-
-        [HttpPost, Route("login")]
+        [Route("login")]
         public IActionResult UserLogin()
         {
             return View(new UserLogin());
         }
 
-        public IActionResult CheckLogin()
+        public void SignIn()
         {
-            return Redirect("/");
+            return;
         }
 
-        [HttpPost, Route("register")]
+        [Route("register")]
         public IActionResult UserRegister()
         {
             return View(new UserRegister());
         }
 
-        public IActionResult NewUser()
+        public void CreateUser(UserRegister newUser)
         {
-            return Redirect("/");
+            return;
         }
+
     }
 }
