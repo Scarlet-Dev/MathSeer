@@ -13,7 +13,9 @@ namespace MathSeer.UI.Extensions
         public static HtmlString LabelWithLink(string expression, string labelText, string linkText, string authName, string actionName, object linkAttributes)
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append($"<label for='{expression}'>{labelText}<a href='{String.Format("/", authName, actionName)}'>{linkText}<a/></label>");
+            sb.Append(
+                String.Format(
+                    $"<label for='{expression}' class={linkAttributes}>{labelText}<a href='{String.Format("/{0}/{1}", authName, actionName)}'>{linkText}<a/></label>"));
             return new HtmlString(sb.ToString());
         }
         
