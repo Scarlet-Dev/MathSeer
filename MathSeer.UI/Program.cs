@@ -7,7 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Serilog;
+using Serilog.Formatting;
 using Serilog.Events;
+using Serilog.Formatting.Compact;
 
 namespace MathSeerUI
 {
@@ -19,13 +21,7 @@ namespace MathSeerUI
                 .MinimumLevel.Debug()
                 .MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Warning)
                 .Enrich.FromLogContext()
-                .WriteTo.File(
-                @$"{Directory.GetCurrentDirectory()}/logs/{String.Format("{0}_Logfile.txt", DateTime.Now)}",
-                fileSizeLimitBytes: 1_000_000,
-                rollOnFileSizeLimit: true,
-                shared: true,
-                flushToDiskInterval: TimeSpan.FromSeconds(1)
-                )
+                .WriteTo.File(new RenderedCompactJsonFormatter(), "/logs/log.ndjson")
                 .CreateLogger();
             try
             {
