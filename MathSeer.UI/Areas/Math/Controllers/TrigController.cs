@@ -6,8 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MathSeer.UI.Areas.Math.Controllers
 {
+    [Route("/trigs")]
     public class TrigController : Controller
     {
+        [Route("/")]
         public IActionResult Index()
         {
             return View();
