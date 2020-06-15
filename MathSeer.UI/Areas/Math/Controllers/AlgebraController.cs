@@ -9,7 +9,7 @@ namespace MathSeer.UI.Areas.Math.Controllers
     [Route("/algebra")]
     public class AlgebraController : Controller
     {
-        [Route("/home")]
+        [Route("/")]
         public IActionResult Index()
         {
             return View();
