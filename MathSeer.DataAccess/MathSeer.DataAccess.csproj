@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Interfaces\Services\Calculator\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
