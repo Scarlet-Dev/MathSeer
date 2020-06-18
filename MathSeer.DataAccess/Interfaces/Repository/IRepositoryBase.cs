@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MathSeer.DataAccess.Interfaces
 {
-    interface IRepositoryBase
+    public interface IRepositoryBase
     {
     }
 }
