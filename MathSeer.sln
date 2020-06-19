@@ -15,7 +15,7 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "MathSeer.MathFunctions", "M
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathSeer.Learning", "MathSeer.Learning\MathSeer.Learning.csproj", "{2DFC4EFC-2A5D-4352-8431-D3E7BDD0680A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSeer.Models", "MathSeer.Models\MathSeer.Models.csproj", "{7868B672-5866-465A-BAF2-A3E4136260AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathSeer.Models", "MathSeer.Models\MathSeer.Models.csproj", "{7868B672-5866-465A-BAF2-A3E4136260AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
